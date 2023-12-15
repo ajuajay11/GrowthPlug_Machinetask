@@ -62,16 +62,13 @@
     }
  
 }
-@media only screen   
-and (min-device-width : 360px)   
-and (max-device-width : 991px) {
+@media only screen and (min-device-width : 360px) and (max-device-width : 991px) {
     .ham{
         margin-right: 30px;
     }
-    
     #hero{
         margin-top: 74px;
-    }
+    } 
     .requestAnAppointment_nav{
         display: none;
     }
