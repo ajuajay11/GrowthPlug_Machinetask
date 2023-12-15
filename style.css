@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .opensans{
     font-family:'Open Sans';
 }
@@ -42,22 +43,21 @@ header{
     margin-right: 35px;
 }
 /* header */
+.hamburger_nav{
+    display: flex;
+    align-items: center;
+}
+.hamburger_nav .ham{
+    display: none;
+}
 .navigation{
     display: flex;
     justify-content: space-between;
     padding-left: 30px;
     background: #fff;
+    box-shadow: 0px 1px 0px #ababab;
 }
-.navigation nav ul{
-    color: #333;
-    display: flex;
-    list-style: none;
-    gap: 26px;
-    font-size: 14px;
-    align-items: center;
-    padding: 18px;
-    cursor: pointer;
-}
+
 nav ul li a{
     text-decoration: none;
     color: #616C94 !important
@@ -129,7 +129,7 @@ nav ul li a{
 .Dentaltitle{
     align-items: center;
     padding: 30px 20px;
-    font-family: sans-serif;
+    font-family: 'open sans';
 }
 .Dentaltitle h2{
     font-size: 34px;
@@ -256,8 +256,365 @@ nav ul li a{
     padding-top: 70px;
     height: 500px;
     width: 350px;
+    object-fit: cover;
  }
  .MeetDrVaniSection-column .requestAnAppointment
 {
     margin-top: 25px;
+}
+
+
+/* ourservices */
+
+#ourservicesAll{
+display: flex;
+flex-direction: row;
+gap: 30px;
+padding: 35px;
+}
+.ourservicesimg{
+    background: url(./images/ourservices.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 80%;
+    flex: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 103vh;
+}
+.servicesimg span{
+    font-size: 35px;
+    font-family: 'Open Sans';
+    color:#fff;
+}
+.galleryimg{
+    background: url(./images/gallery1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: 50%;
+    height: 50vh;
+    text-align: center;
+    position: relative;
+}
+.galleryimg span{
+        position: absolute;
+        bottom: 0px;
+        left: 97px;
+        font-size: 18px;
+        background: #00000075;
+        color: #fff;
+        font-family: sans-serif;
+}
+.ourservicesgallerysection{
+    flex: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+   align-content: center;
+}
+.ourservicesgallery{
+    display: flex;
+    gap: 30px;
+align-content: center;
+}
+.general span{
+    left: 56px;
+}
+.ourservicesgallery :nth-child(1){
+}
+/* section four */
+.whatmakeusdifferent{
+    background: url(./images/bg.webp);
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.whatmakeusdifferent_titlesection{
+flex: 50%;
+display: flex;
+flex-direction: column;
+align-items: start;
+justify-content: start;
+padding-left: 80px;
+padding-top: 235px;
+gap: 20px;
+padding-right: 30px;
+}
+.whatmakeusdifferent_titlesection h3{
+font-size: 62px;
+font-family: sans-serif;
+line-height: 1;
+color: #616C94;
+}
+.whatmakeusdifferent_titlesection p{
+    font-size: 18px;
+    font-family: 'open sans';
+    line-height: 1.5;
+}
+.whatmakeusdifferent_titlesection_btnsection{
+    display: flex;
+    align-items:center;
+    gap: 20px;
+    padding-top: 20px;
+
+}
+.whatmakeusdifferent_titlesection_btnsection :nth-child(1){
+    background: #6FB6B6;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 18px;
+    border-radius: 30px;
+    width: max-content;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+.whatmakeusdifferent_titlesection_btnsection :nth-child(2){
+    background: #616c94;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 18px;
+    border-radius: 30px;
+    width: max-content;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+.whatmakeusdifferent_circleimges{
+    flex: 50%;
+    position: relative;
+}
+
+.whatmakeusdifferent_circleimges img{
+    border-radius: 50%;
+    position: absolute;
+    object-fit: contain;
+}
+.whatmakeusdifferent_circleimges :nth-child(1){
+    width: 30%;
+    top: 85px;
+    left: 12px;
+}
+.whatmakeusdifferent_circleimges :nth-child(2){
+    top: 285px;
+    width: 60%;
+    left: 27px;
+}
+.whatmakeusdifferent_circleimges :nth-child(3){
+    top: 647px;
+    width: 40%;
+    left: -106px;
+}
+.whatmakeusdifferent_circleimges :nth-child(4){
+    top: 646px;
+    width: 28%;
+    left: 340px;
+}
+
+/* CSS for Testimonial Slider */
+
+.testimonial-sectionAll{
+    background: #6fb6b645;
+    padding: 40px;
+}
+.testimonal{
+    border: 2px solid #fff;
+    background: transparent;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+padding: 40px 0px 120px;
+}
+.reviewslidesection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.review h3{
+    font-size: 35px;
+    font-family: 'open sans'; 
+    color: #6FB6B6;
+    font-weight: 600;
+}
+.reviewslidesection{
+    padding: 0px 160px;
+}
+.reviewslidesection .line{
+    width: 50px;
+    height: 3px;
+    background: #fff;
+    margin: 20px 0px;
+
+}
+.reviewslidesection h3{
+    color: #333;
+    padding-top: 10px;
+    font-size: 20px;
+    font-family: 'open sans'; 
+    text-align: center;
+    letter-spacing: 1;
+    font-weight: 600;
+}
+.reviewslidesection span{
+    color: #333;
+    padding-top: 10px;
+    font-size: 22px;
+    font-family: 'open sans'; 
+    text-align: center;
+    letter-spacing: 1;
+    font-weight: 600;
+}
+.star{
+    padding-top: 12px;
+}
+.star i{
+    font-size: 19px;
+    color: #fcb300;
+}
+.googlereview img{
+width: 103px;
+padding-top: 10px;
+}
+
+/* carouselSection */
+
+.carouselSection{
+display: flex;
+flex-direction: column;
+padding: 30px 30px;
+align-items: center;
+justify-content: center;
+}
+.Gallery{
+    padding: 20px 0px 35px;
+}
+
+.Gallery h3{
+    font-size: 34px;
+    font-weight: 400;
+    font-family: sans-serif;
+    color: #333;
+}
+.slideshow-container {
+    max-width: 1200px;
+    position: relative;
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.mySlides {
+    display: none;
+    transition: 1s;
+}
+
+.mySlides img {
+    width: 100%;
+    height: 230px;
+    border-radius: 5px;
+    object-fit: cover;
+    vertical-align: middle;
+    transition: 1s;
+}
+
+.dot {
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    border: 2px solid #6FB6B6;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.dotsection{
+    padding-top: 30px;
+}
+.active, .dot:hover {
+    background-color: #6FB6B6;
+}
+
+/* smile_section */
+.smile_section{
+    background: url(./images/smile-bg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 150px 50px;
+}
+.smile_section_title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.smile_section_title h1{
+    font-size: 64px;
+    color: #333;
+font-family: sans-serif;
+font-weight: 400;
+}
+
+/* footeersection */
+
+.footersec{
+    background: #8ac3c362;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    padding: 40px 40px 30px 40px;
+    background: url(https://gp-assets-1.growthplug.com/website_files/4952/main-circles.webp);
+    background-size: cover;
+    background-position: 100% center;
+    padding-top: 20px;
+}
+.footersec .number{
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #616C94;
+    font-family: sans-serif;
+    line-height: 2;
+}
+.footersec .logo{
+    width: 140px;
+}
+.canton{
+    padding: 30px 0px 10px;
+    font-family: sans-serif;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 24px;
+}
+.termsandcon{
+    display: flex;
+    align-items: row;
+    justify-content: space-around;
+    gap: 170px;
+}
+.termsandcon span{
+    font-size: 14px;
+    font-family: 'open sans';
+    color: #000;
+}
+.socialicons ul{
+    padding: 20px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.socialicons ul li{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.socialicons ul li i{
+    color: #fff;
+    background: #616C94;
+    padding: 10px;
+    border-radius: 2px;
 }

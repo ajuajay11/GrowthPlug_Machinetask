@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="resp.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>GrowthPlug</title>
 </head>
@@ -17,8 +18,11 @@
             <div class="logo">
                 <img src="./images/logo.png" alt="logo">
             </div>
-            <nav>
-                <ul class="opensans">
+            <nav id="hamburger_nav" class="hamburger_nav">
+                <div id="ham" class="ham">
+                    <i style="color:#6FB6B6" class="fa fa-bars"></i>
+                </div>
+                <ul class="ham_nav" class="opensans">
                     <li>HOME</li>
                     <li>ABOUT</li>
                     <li>SERVICES</li>
@@ -48,7 +52,7 @@
 
     <!-- //alldentalsection starts -->
 
-    <section id="AlldentalSection">
+    <section class="AlldentalSection">
 
         <!-- //sectionone-->
         <div class="patibandlaDentalsection">
@@ -92,8 +96,176 @@
                 <img src="./images/patibandla.png" alt="patibandla">
             </div>
         </div>
+
+        <!-- //sectionthree -->
+        <section id="ourservicesAll">
+            <div class="ourservicesimg">
+                <div class="servicesimg">
+                   <span>Ourservices</span>
+                </div>
+            </div>
+            <div class="ourservicesgallerysection">
+                <div class="ourservicesgallery">
+                   <div class="galleryimg">
+                       <span>RESTORATIVE DENTISTRY</span>
+                    </div>
+                    <div class="galleryimg general"><span>GENERAL & FAMILY DENTISTRY</span></div>
+                </div>
+                <div class="ourservicesgallery">
+                    <div class="galleryimg"><span>DENTAL TECHNOLOGY</span></div>
+                    <div class="galleryimg"><span>COSMETIC DENTISTRY</span></div>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- sectionfour -->
+        <section class="whatmakeusdifferent">
+            <div class="whatmakeusdifferent_titlesection">
+                <h3>What makes us different?</h3>
+                <p>As a comprehensive practice, we do it all. From cosmetic and general dentistry to restorative dentistry, our team is here to help you with your dental needs. We see children as young as 2 years old and are delighted to get to know you and your family as we see to your dental health.</p>
+                <div class="whatmakeusdifferent_titlesection_btnsection">
+                    <div class="requestAnAppointment">REQUEST AN APPOINMENT</div>
+                    <div class="learnmore">Learn More</div>
+                </div>
+            </div>
+            <div class="whatmakeusdifferent_circleimges">
+                <img src="./images/circle2.webp" alt="circle1">
+                <img src="./images/circle3.webp" alt="circle1"> 
+                <img src="./images/circle4.webp" alt="circle1">
+                 <img src="./images/circle1.webp" alt="circle1">
+            </div>
+        </section>
         
     </section>
+
+    <!-- testimonial section -->
+
+    <section class="testimonial-sectionAll">
+        <div class="testimonal">
+            <div class="review">
+                <h3>REAL REVIEWS FROM PATIENTS LIKE YOU</h3>
+            </div>
+            <div class="reviewslidesection">
+                
+                <h3>Most people don’t enjoy the trip to the dentist. I don’t mind going at all! Dr Patti and her staff are always courteous. When she is doing the examine...</h3>
+                <div class="line"></div>
+                <span>Julie E. | Nov 2023</span>
+                <div class="star">
+                    <i class="fa fa-star "></i>
+                    <i class="fa fa-star "></i>
+                    <i class="fa fa-star "></i>
+                    <i class="fa fa-star "></i>
+                    <i class="fa fa-star "></i>
+                </div>
+                <div class="googlereview">
+                    <img src="./images/google.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- carouselSection section -->
+    <section class="carouselSection">
+        <div class="Gallery">
+            <h3>Gallery</h3>
+        </div>
+            <div class="slideshow-container">
+                <div class="mySlides">
+                    <img src="./images/carousel1.webp" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="./images/carousel2.webp" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="./images/carousel3.webp" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="./images/carousel4.webp" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="./images/carousel5.webp" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="./images/carousel1.webp" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="./images/carousel2.webp" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="./images/carousel3.webp" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="./images/carousel4.webp" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="./images/carousel5.webp" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="./images/carousel.webp" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="./images/carousel2.webp" style="width:100%">
+                </div>
+                
+            </div>
+
+            <div class="dotsection" style=" text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+            </div>    
+        </div>
+        
+    </section>
+
+
+    <!-- smile section start -->
+    <section class="smile_section">
+        <div class="smile_section_title">
+            <h1>We’ll Keep You Smiling!</h1>
+            <div class="whatmakeusdifferent_titlesection_btnsection">
+                <div class="requestAnAppointment">REQUEST AN APPOINMENT</div>
+                <div class="learnmore">CALL US</div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- map section -->
+
+    <div class="google-map">
+        <iframe style="width:100%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.274257380938!2d-70.56068388481569!3d41.45496659976631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e52963ac45bbcb%3A0xf05e8d125e82af10!2sDos%20Mas!5e0!3m2!1sen!2sus!4v1671220374408!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   </div>
+
+    <!-- footer section -->
+    <footer>
+        <div class="footersec">
+            <img class="logo" src="./images/logo.png" alt="logo">
+            <div class="canton">CANTON, OH<br><span style="font-size: 18px;">3507 CLEVELAND AVE. NW, Canton, OH 44709</span></div>
+            <div class="number">(330) 452-0695</div>
+            <div class="number email">drpatibandladds@gmail.com</div>
+            <div class="socialicons">
+                    <ul>
+                        <li><i class="fa fa-yelp" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-facebook " aria-hidden="true"></i></li>
+                        <li><i class="fa fa-google" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                    </ul>
+            </div>
+            <div class="termsandcon">
+                <span>© Copyright 2023 GrowthPlug, Inc</span>
+                <span>Privacy Policy</span>
+                <span>Terms and Conditions</span>
+                <span>Accessibility Statement</span>
+            </div>
+        </div>
+        
+    </footer>
+    <script src="main.js"></script>
     
 </body>
 </html>
